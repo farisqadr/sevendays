@@ -36,7 +36,7 @@ class FirstStarted extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 525, left: 175),
+            padding: const EdgeInsets.only(top: 525, left: 160),
             child: Image.asset(
               'assets/btn_purple.png',
               width: 50,
