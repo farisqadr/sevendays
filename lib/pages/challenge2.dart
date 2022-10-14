@@ -43,9 +43,7 @@ class ChallengeTwo extends StatelessWidget {
               minimumSize: Size(250, 36),
               backgroundColor: Color(0xffAFEA0D),
             ),
-            onPressed: () {
-              print('Pressed');
-            },
+            onPressed: () {},
           ),
         ),
         Padding(
