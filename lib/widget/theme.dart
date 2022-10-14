@@ -16,6 +16,9 @@ TextStyle buttonTextStyle =
 Color whiteColor = Color(0xffFFFFFF);
 
 TextStyle titleTextStyle = GoogleFonts.poppins(
-    color: whiteColor, fontSize: 24, fontWeight: FontWeight.w300);
+    color: whiteColor, fontSize: 24, fontWeight: FontWeight.w600);
+
+TextStyle descTextStyle = GoogleFonts.poppins(
+    color: whiteColor, fontSize: 16, fontWeight: FontWeight.w300);
 
 Color pinkColor = Color(0xffF94593);
