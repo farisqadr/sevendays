@@ -7,7 +7,7 @@ class RatingScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xff181925),
       body: Padding(
-        padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
+        padding: const EdgeInsets.only(top: 70, left: 30, right: 30),
         child: Column(
           children: [
             Image.asset(
@@ -18,7 +18,7 @@ class RatingScreen extends StatelessWidget {
               height: 20,
             ),
             Text(
-              'Pizza Ballado',
+              'Pizza Goreng Kai',
               style: titleTextStyle,
             ),
             SizedBox(
