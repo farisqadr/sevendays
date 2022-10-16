@@ -16,10 +16,10 @@ class _FeatureLightState extends State<FeatureLight> {
         children: [
           Image.asset(
             'assets/crown.png',
-            width: 100,
+            width: 80,
           ),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Text(
             'Which one you \nwish to Upgrade?',
@@ -27,7 +27,7 @@ class _FeatureLightState extends State<FeatureLight> {
             textAlign: TextAlign.center,
           ),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
         ],
       );
@@ -108,27 +108,45 @@ class _FeatureLightState extends State<FeatureLight> {
     }
 
     return Scaffold(
-        body: Padding(
-      padding: const EdgeInsets.only(
-        top: 30,
-        left: 30,
+      body: Padding(
+        padding: const EdgeInsets.only(
+          top: 30,
+          left: 30,
+        ),
+        child: Column(
+          children: [
+            header(),
+            option(0, 'assets/pig.png', 'Money Security', 'support ', '24/7'),
+            SizedBox(
+              height: 14,
+            ),
+            option(1, 'assets/small_doc.png', 'Automation', 'we provide ',
+                'invoice'),
+            SizedBox(
+              height: 14,
+            ),
+            option(
+                2, 'assets/dollar.png', 'Business Report', 'can up to ', '10K'),
+          ],
+        ),
       ),
-      child: Column(
-        children: [
-          header(),
-          option(0, 'assets/pig.png', 'Money Security', 'support ', '24/7'),
-          SizedBox(
-            height: 14,
-          ),
-          option(1, 'assets/small_doc.png', 'Automation', 'we provide ',
-              'invoice'),
-          SizedBox(
-            height: 14,
-          ),
-          option(
-              2, 'assets/dollar.png', 'Business Report', 'can up to ', '10K'),
-        ],
-      ),
-    ));
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color(0xff6050e7),
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: Text(
+                  'Upgrade Now',
+                  style: buttonTextStyle,
+                ),
+                label: ''),
+            BottomNavigationBarItem(
+                icon: Image.asset(
+                  'assets/arrow_right.png',
+                  width: 25,
+                ),
+                label: ''),
+          ]),
+    );
   }
 }
