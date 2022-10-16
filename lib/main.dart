@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sevendays/pages/challenge5.dart';
+import 'package:sevendays/pages/feature.dart';
 
 void main() => runApp(SevenDays());
 
 class SevenDays extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false, home: ChallengeFive());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: FeatureLight());
   }
 }
