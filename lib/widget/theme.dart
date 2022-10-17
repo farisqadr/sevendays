@@ -21,9 +21,12 @@ Color whiteColor = Color(0xffFFFFFF);
 TextStyle titleTextStyle = GoogleFonts.poppins(
     color: whiteColor, fontSize: 24, fontWeight: FontWeight.w600);
 
-TextStyle priceTextStyle = GoogleFonts.poppins(color: whiteColor, fontSize: 20);
+TextStyle priceTextStyle =
+    GoogleFonts.poppins(color: Color(0xff7F7FAD), fontSize: 20);
 
 TextStyle descTextStyle = GoogleFonts.poppins(
     color: whiteColor, fontSize: 20, fontWeight: FontWeight.w500);
+
+TextStyle whiteBodyStyle = GoogleFonts.poppins(color: whiteColor, fontSize: 16);
 
 Color pinkColor = Color(0xffF94593);
