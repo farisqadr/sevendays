@@ -135,15 +135,21 @@ class _FeatureLightState extends State<FeatureLight> {
           backgroundColor: Color(0xff6050e7),
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Text(
-                  'Upgrade Now',
-                  style: buttonTextStyle,
+                icon: Padding(
+                  padding: const EdgeInsets.only(top: 5),
+                  child: Text(
+                    'Upgrade Now',
+                    style: buttonTextStyle,
+                  ),
                 ),
                 label: ''),
             BottomNavigationBarItem(
-                icon: Image.asset(
-                  'assets/arrow_right.png',
-                  width: 25,
+                icon: Padding(
+                  padding: const EdgeInsets.only(top: 5, left: 70),
+                  child: Image.asset(
+                    'assets/arrow_right.png',
+                    width: 25,
+                  ),
                 ),
                 label: ''),
           ]),
