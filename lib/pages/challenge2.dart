@@ -35,15 +35,15 @@ class ChallengeTwo extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 490, left: 60),
           child: TextButton(
-            child: Text("Shape My Body",
-                style: GoogleFonts.poppins(
-                    fontSize: 14, fontWeight: FontWeight.w500)),
             style: TextButton.styleFrom(
-              primary: Colors.black,
+              foregroundColor: Colors.black,
               minimumSize: Size(250, 36),
               backgroundColor: Color(0xffAFEA0D),
             ),
             onPressed: () {},
+            child: Text("Shape My Body",
+                style: GoogleFonts.poppins(
+                    fontSize: 14, fontWeight: FontWeight.w500)),
           ),
         ),
         Padding(

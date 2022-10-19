@@ -26,65 +26,72 @@ class CartList extends StatelessWidget {
       height: 150,
       decoration: BoxDecoration(
           color: Color(0xffEEF0F0), borderRadius: BorderRadius.circular(17)),
-      child: Row(children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 30, left: 10),
-          child: Column(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 30, left: 10),
+            child: Column(
+              children: [
+                Image.asset(
+                  gambarMakanan,
+                  width: 70,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  children: [
+                    Image.asset(
+                      iconMinus,
+                      width: 20,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text(jumlahMakanan),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Image.asset(
+                      iconPlus,
+                      width: 20,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          SizedBox(width: 10),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(
-                gambarMakanan,
-                width: 70,
-              ),
               SizedBox(
-                height: 10,
+                height: 40,
               ),
-              Row(
-                children: [
-                  Image.asset(
-                    iconMinus,
-                    width: 20,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(jumlahMakanan),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Image.asset(
-                    iconPlus,
-                    width: 20,
-                  ),
-                ],
+              Text(
+                namaMakanan,
+                style: lightTextStyle,
+              ),
+              Text(
+                descMakanan,
+                style: messageTextStyle,
+              )
+            ],
+          ),
+          Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 120, right: 20),
+                child: Text(
+                  hargaMakanan,
+                  style: lightTextStyle,
+                ),
               ),
             ],
           ),
-        ),
-        SizedBox(width: 10),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: 40,
-            ),
-            Text(
-              namaMakanan,
-              style: lightTextStyle,
-            ),
-            Text(
-              descMakanan,
-              style: messageTextStyle,
-            )
-          ],
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 90, left: 20, right: 10),
-          child: Text(
-            hargaMakanan,
-            style: lightTextStyle,
-          ),
-        )
-      ]),
+        ],
+      ),
     );
   }
 }
