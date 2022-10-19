@@ -94,6 +94,8 @@ class ShoppingCart extends StatelessWidget {
               height: 50,
               child: TextButton(
                   style: TextButton.styleFrom(
+                      shadowColor: Color(0xffFFC532),
+                      elevation: 7,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
                       backgroundColor: Color(0xffFFC532)),
