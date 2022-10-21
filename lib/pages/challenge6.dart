@@ -116,18 +116,32 @@ class ChallengeSix extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            TextButton(
-                style: TextButton.styleFrom(
-                  backgroundColor: Color(0xffE57C73),
-                  shadowColor: Color(0xffE57C73),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                ),
-                onPressed: () {},
-                child: Text(
-                  'Subscribe Now',
-                  style: buttonTextStyle,
-                )),
+            Container(
+              width: 300,
+              height: 100,
+              child: TextButton(
+                  style: TextButton.styleFrom(
+                    backgroundColor: Color(0xffE57C73),
+                    shadowColor: Color(0xffE57C73),
+                    elevation: 20,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20)),
+                  ),
+                  onPressed: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 70, right: 5),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Subscribe Now',
+                          style: buttonTextStyle,
+                        ),
+                        Image.asset('assets/btn_arrow.png')
+                      ],
+                    ),
+                  )),
+            ),
             SizedBox(
               height: 5,
             ),
